@@ -11,7 +11,129 @@
 </head>
 
 <body>
-  
+  <div class="wrapper">
+    <header class="primary-header">
+      <div class="navigation-container">
+        <h1>
+          <a href="#">
+            <img class="logo" src="./assets/icons&logo/logo.png" alt="Ikae">
+          </a>
+        </h1>
+
+        <!-- Hamburger -->
+        <button class="btn-menu btn-menu--open" aria-label="toggle menu">
+          &#9776;
+        </button>
+
+        <nav class="nav">
+          <ul class="nav__ul">
+            <!-- Exit navbar -->
+            <li class="nav__list nav__list--menu-btn">
+              <button class="btn-menu btn-menu--exit" aria-label="exit menu">
+                &#10006;
+              </button>
+            </li>
+
+            <li class="nav__list">
+              <a class="nav__link uppercase" href="#">Shop</a>
+            </li>
+            <li class="nav__list">
+              <a class="nav__link uppercase" href="#">Collection</a>
+            </li>
+            <li class="nav__list">
+              <a class="nav__link uppercase" href="#">Blog</a>
+            </li>
+            <li class="nav__list">
+              <a class="nav__link uppercase" href="#">Contact</a>
+            </li>
+
+            <li class="nav__list nav__list--search">
+              <form id="search" class="search">
+                <input class="search__input" type="text" placeholder="Search for products...">
+                <button class="search__submit" aria-label="submit search">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <section class="hero">
+        <h2 class="hero__title uppercase">Fresh Furniture</h2>
+      </section>
+    </header>
+
+    <main>
+      <section class="section section--about">
+        <header class="section-header section-header--about">
+          <h2 class="section-header__heading">About us</h2>
+        </header>
+
+        <div class="about-contents-container">
+          <section class="about-us-info">
+            <h3 class="about-content__heading">We provide good furniture</h3>
+            <p class="about-content__text">
+              As a home furnishing store, we produce furniture that is well-designed, functinoal and affordable. Here
+              you will find everything from home solutions to a large selection of bedroom furniture, lighting, sofas,
+              homeware, blinds, curtains, beddding and more. Discover our wide range of products in-store or online!
+            </p>
+          </section>
+
+          <section class="specialization">
+            <h3 class="about-content__heading specialization__heading">Our specialization</h3>
+            <div>
+              <img class="specialization__icon" src="./assets/icons&logo/delivery.png" alt="Delivery icon">
+              <p class="specialization__text uppercase">Delivery</p>
+            </div>
+            <div>
+              <img class="specialization__icon" src="./assets//icons&logo//support.png" alt="Support icon">
+              <p class="specialization__text uppercase">Support</p>
+            </div>
+            <div>
+              <img class="specialization__icon" src="./assets//icons&logo//montage.png" alt="Montage icon">
+              <p class="specialization__text uppercase">Montage</p>
+            </div>
+          </section>
+
+          <img class="specialization__img" src="./assets//images/image.jpg" alt="Interior furniture">
+        </div>
+      </section>
+
+      <section class="section section--categories">
+        <header class="section-header section-header--categories">
+          <h2 class="section-header__heading">Categories</h2>
+        </header>
+
+        <div class="category-container">
+          <div class="category">
+            <h3 class="category__title uppercase">Bathroom</h3>
+            <img class="category__img" src="./assets/images/bathroom.jpg" alt="Bathroom">
+          </div>
+          <div class="category">
+            <h3 class="category__title uppercase">Kitchen</h3>
+            <img class="category__img" src="./assets/images/kitchen.jpg" alt="Kitchen">
+          </div>
+          <div class="category">
+            <h3 class="category__title uppercase">Bed Room</h3>
+            <img class="category__img" src="./assets/images/bedroom.jpg" alt="Bed Room">
+          </div>
+          <div class="category">
+            <h3 class="category__title uppercase">Living Room</h3>
+            <img class="category__img" src="./assets/images/livingroom.jpg" alt="Living Room">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        &copy;IKAE <span id="year">2020</span>
+      </p>
+      <span class="footer__vertical-rule">|</span>
+      <p>All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 
 </html>
