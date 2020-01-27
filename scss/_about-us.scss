@@ -47,3 +47,40 @@
   }
 }
 
+@media (min-width: $breakpoint-tablet) {
+  
+  .about-contents-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-us-info {
+    flex-basis: 60%;
+  }
+
+  .about-content {
+
+    &__text {
+      font-size: 1.75rem;
+    }
+  }
+
+  .specialization {
+    margin: 0;
+    text-align: left;
+    flex-basis: 30%;
+
+    &__icon {
+      width: 30%;
+    }
+    
+    &__text {
+      font-size: 1.75rem;
+    }
+
+    &__img {
+      display: block;
+    }
+  }
+}

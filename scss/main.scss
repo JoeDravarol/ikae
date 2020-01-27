@@ -18,3 +18,9 @@ body {
 .uppercase {
   text-transform: uppercase;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  html {
+    font-size: 60%;
+  }
+}

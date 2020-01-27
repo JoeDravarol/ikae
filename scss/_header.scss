@@ -107,3 +107,20 @@
     font-family: 'Montserrat', sans-serif;
   }
 }
+
+@media (min-width: $breakpoint-tablet) {
+
+  .navigation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .hero {
+
+    &__title {
+      font-size: 5rem;
+    }
+  }
+}

@@ -35,3 +35,15 @@
     
   }
 }
+
+@media (min-width: $breakpoint-tablet) {
+
+  .category-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+  .category {
+    flex-basis: 50%;
+  }
+}
