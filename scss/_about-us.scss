@@ -1,0 +1,49 @@
+.section--about {
+  background: $lightgray;
+  padding-bottom: 2em;
+}
+
+.about-contents-container {
+  margin: 0 3em;
+  color: $darkgray;
+}
+
+.about-content {
+
+  &__heading {
+    color: $gray;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1.25em;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: inherit;
+  }
+}
+
+.specialization {
+  margin-top: 3.5em;
+  text-align: center;
+
+  &__heading {
+    text-align: left;
+  }
+
+  &__icon {
+    width: 40%;
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+
+  &__img {
+    display: none;
+  }
+}
+
