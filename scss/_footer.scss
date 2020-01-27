@@ -12,3 +12,9 @@
     margin: 0 10px;
   }
 }
+
+@media (min-width: $breakpoint-laptop) {
+  .footer {
+    font-size: 1.8rem;
+  }
+}

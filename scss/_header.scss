@@ -5,10 +5,10 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  
-  .logo {
-    width: 60px;
-  }
+}
+
+.logo {
+  width: 60px;
 }
 
 .nav {
@@ -226,6 +226,43 @@
       border: 0;
       border-radius: 50%;
       cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xl-tablet) {
+  .logo {
+    width: 80px;
+  }
+
+  .hero {
+
+    &__title {
+      font-size: 6rem;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-laptop) {
+
+  .logo {
+    width: 120px;
+  }
+
+  .navigation-container {
+    padding: 0 3em;
+  }
+
+  .hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .nav {
+
+    &__list {
+      margin: 0 1em;
     }
   }
 }

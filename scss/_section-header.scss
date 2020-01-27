@@ -7,3 +7,11 @@
     color: $darkgray;
   }
 }
+
+@media (min-width: $breakpoint-laptop) {
+
+  .section-header {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}

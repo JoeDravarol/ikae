@@ -47,3 +47,15 @@
     flex-basis: 50%;
   }
 }
+
+@media (min-width: $breakpoint-laptop) {
+  .category {
+    flex-basis: 25%;
+    height: 80vh;
+    max-height: 600px;
+    
+    &__title {
+      transform: translate(-50%, -30%);
+    }
+  }
+}

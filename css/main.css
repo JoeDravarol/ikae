@@ -361,7 +361,7 @@ template {
   position: relative;
 }
 
-.navigation-container .logo {
+.logo {
   width: 60px;
 }
 
@@ -598,6 +598,32 @@ template {
   }
 }
 
+@media (min-width: 900px) {
+  .logo {
+    width: 80px;
+  }
+  .hero__title {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 120px;
+  }
+  .navigation-container {
+    padding: 0 3em;
+  }
+  .hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .nav__list {
+    margin: 0 1em;
+  }
+}
+
 .section-header {
   padding: 1.5em 3em;
 }
@@ -606,6 +632,13 @@ template {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 2.25rem;
   color: #4a4a4a;
+}
+
+@media (min-width: 1200px) {
+  .section-header {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 }
 
 .section--about {
@@ -689,6 +722,54 @@ template {
   }
 }
 
+@media (min-width: 900px) {
+  .about-us-info {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .specialization {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+  .specialization__img {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: right;
+       object-position: right;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section--about {
+    padding-bottom: 5em;
+  }
+  .about-contents-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 0 3em;
+    max-width: 1500px;
+  }
+  .about-us-info {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  .specialization {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin: 0 10em;
+  }
+  .specialization__img {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    max-width: 450px;
+    -o-object-position: initial;
+       object-position: initial;
+  }
+}
+
 .category {
   position: relative;
   height: 350px;
@@ -747,6 +828,19 @@ template {
   }
 }
 
+@media (min-width: 1200px) {
+  .category {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    height: 80vh;
+    max-height: 600px;
+  }
+  .category__title {
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+  }
+}
+
 .footer {
   text-align: center;
   color: #b0a3a3;
@@ -766,6 +860,12 @@ template {
 
 .footer__vertical-rule {
   margin: 0 10px;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    font-size: 1.8rem;
+  }
 }
 
 html {
