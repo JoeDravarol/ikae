@@ -266,3 +266,21 @@
     }
   }
 }
+
+@media (min-width: $breakpoint-desktop) {
+
+  .hero {
+    height: 100vh;
+
+    &__title {
+      font-size: 8rem;
+    }
+  }
+
+  .nav {
+
+    &__link {
+      font-size: 2rem;
+    }
+  }
+}

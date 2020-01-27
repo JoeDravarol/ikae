@@ -30,3 +30,11 @@ body {
     font-size: 62.5%;
   }
 }
+
+@media (min-width: $breakpoint-desktop) {
+  .wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
