@@ -486,6 +486,118 @@ template {
   }
 }
 
+@media (min-width: 800px) {
+  /* Hide hamburger */
+  .hide-on-desktop {
+    display: none;
+  }
+  /* Display nav links */
+  .hide-on-mobile {
+    display: block;
+  }
+  .nav {
+    position: static;
+    height: auto;
+    background: transparent;
+    padding: 0;
+  }
+  .nav__ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .nav__list {
+    margin: 0 .5em;
+  }
+  .nav__list--menu-btn, .nav__list--search {
+    -webkit-box-ordinal-group: initial;
+        -ms-flex-order: initial;
+            order: initial;
+  }
+  .nav__link {
+    font-size: 1.6rem;
+    color: #b0a3a3;
+  }
+  .nav__link--active, .nav__link:hover {
+    color: #4a4a4a;
+  }
+  /* Style desktop navbar */
+  .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: width 200ms ease-in-out;
+    transition: width 200ms ease-in-out;
+  }
+  .search:focus-within {
+    border-color: #4a4a4a;
+    width: 235px;
+  }
+  .search:focus-within .search__input {
+    width: calc(100% - 60px);
+    opacity: 1;
+    left: 40px;
+    z-index: initial;
+    cursor: initial;
+  }
+  .search__input {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: calc(100% - $size);
+    padding: .25em;
+    text-align: left;
+    border: none;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .search__input::-webkit-input-placeholder {
+    text-align: left;
+  }
+  .search__input:-ms-input-placeholder {
+    text-align: left;
+  }
+  .search__input::-ms-input-placeholder {
+    text-align: left;
+  }
+  .search__input::placeholder {
+    text-align: left;
+  }
+  .search__submit {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    background: transparent;
+    color: #4a4a4a;
+    font-size: 2rem;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
 .section-header {
   padding: 1.5em 3em;
 }
@@ -671,6 +783,12 @@ body {
 @media (min-width: 600px) {
   html {
     font-size: 60%;
+  }
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 62.5%;
   }
 }
 /*# sourceMappingURL=main.css.map */

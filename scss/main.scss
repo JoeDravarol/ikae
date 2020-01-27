@@ -24,3 +24,9 @@ body {
     font-size: 60%;
   }
 }
+
+@media (min-width: $breakpoint-lg-tablet) {
+  html {
+    font-size: 62.5%;
+  }
+}
