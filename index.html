@@ -104,23 +104,23 @@
 
       <section class="section section--categories">
         <header class="section-header section-header--categories">
-          <h2 class="section-header__heading wow fadeInLeft" data-wow-delay=".3s">Categories</h2>
+          <h2 class="section-header__heading wow fadeInLeft" data-wow-delay=".1s">Categories</h2>
         </header>
 
         <div class="category-container">
-          <div class="category wow fadeIn" data-wow-delay="1.2s">
+          <div class="category wow fadeIn" data-wow-delay=".8s">
             <h3 class="category__title uppercase">Bathroom</h3>
             <img class="category__img" src="./assets/images/bathroom.jpg" alt="Bathroom">
           </div>
-          <div class="category wow fadeIn" data-wow-delay="1.2s">
+          <div class="category wow fadeIn" data-wow-delay=".8s">
             <h3 class="category__title uppercase">Kitchen</h3>
             <img class="category__img" src="./assets/images/kitchen.jpg" alt="Kitchen">
           </div>
-          <div class="category wow fadeIn" data-wow-delay="1.2s">
+          <div class="category wow fadeIn" data-wow-delay=".8s">
             <h3 class="category__title uppercase">Bed Room</h3>
             <img class="category__img" src="./assets/images/bedroom.jpg" alt="Bed Room">
           </div>
-          <div class="category wow fadeIn" data-wow-delay="1.2s">
+          <div class="category wow fadeIn" data-wow-delay=".8s">
             <h3 class="category__title uppercase">Living Room</h3>
             <img class="category__img" src="./assets/images/livingroom.jpg" alt="Living Room">
           </div>
@@ -129,18 +129,20 @@
     </main>
 
     <footer class="footer">
-      <p class="wow fadeIn">
+      <p class="wow fadeIn" data-wow-offset="0">
         &copy;IKAE <span id="year">2020</span>
       </p>
-      <span class="footer__vertical-rule wow fadeIn">|</span>
-      <p class="wow fadeIn">All rights reserved.</p>
+      <span class="footer__vertical-rule wow fadeIn" data-wow-offset="0">|</span>
+      <p class="wow fadeIn" data-wow-offset="0">All rights reserved.</p>
     </footer>
   </div>
 
   <script src="scripts/app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script>
-    new WOW().init();
+    new WOW({
+      offset: 200,
+    }).init();
   </script>
 </body>
 
