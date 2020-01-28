@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>IKAE | Fresh Furniture</title>
 </head>
@@ -14,40 +16,39 @@
   <div class="wrapper">
     <header class="primary-header">
       <div class="navigation-container">
-        <h1>
+        <h1 class="wow fadeInLeft" data-wow-delay=".3s">
           <a href="#">
             <img class="logo" src="./assets/icons&logo/logo.png" alt="Ikae">
           </a>
         </h1>
 
         <!-- Hamburger -->
-        <button class="btn-menu btn-menu--open hide-on-desktop" aria-label="toggle menu">
+        <button class="btn-menu btn-menu--open hide-on-desktop animated fadeInLeft" aria-label="toggle menu">
           &#9776;
         </button>
 
         <nav class="nav hide-on-mobile">
           <ul class="nav__ul">
-            <!-- Exit navbar -->
-            <li class="nav__list nav__list--menu-btn">
-              <button class="btn-menu btn-menu--exit hide-on-desktop" aria-label="exit menu">
+            <li class="nav__list nav__list--menu-btn hide-on-desktop">
+              <button class="btn-menu btn-menu--exit" aria-label="exit menu">
                 &#10006;
               </button>
             </li>
 
-            <li class="nav__list">
+            <li class="nav__list wow fadeInLeft">
               <a class="nav__link nav__link--active uppercase" href="#">Shop</a>
             </li>
-            <li class="nav__list">
+            <li class="nav__list wow fadeInLeft">
               <a class="nav__link uppercase" href="#">Collection</a>
             </li>
-            <li class="nav__list">
+            <li class="nav__list wow fadeInLeft">
               <a class="nav__link uppercase" href="#">Blog</a>
             </li>
-            <li class="nav__list">
+            <li class="nav__list wow fadeInLeft">
               <a class="nav__link uppercase" href="#">Contact</a>
             </li>
 
-            <li class="nav__list nav__list--search">
+            <li class="nav__list nav__list--search wow fadeInLeft">
               <form id="search" class="search">
                 <input class="search__input" type="text" placeholder="Search for products...">
                 <button class="search__submit" aria-label="submit search">
@@ -60,18 +61,18 @@
       </div>
 
       <section class="hero">
-        <h2 class="hero__title uppercase">Fresh Furniture</h2>
+        <h2 class="hero__title uppercase wow fadeInLeft" data-wow-delay=".5s">Fresh Furniture</h2>
       </section>
     </header>
 
     <main>
       <section class="section section--about">
         <header class="section-header section-header--about">
-          <h2 class="section-header__heading">About us</h2>
+          <h2 class="section-header__heading wow fadeInLeft" data-wow-delay=".1s">About us</h2>
         </header>
 
         <div class="about-contents-container">
-          <section class="about-us-info">
+          <section class="about-us-info wow fadeInLeft" data-wow-delay=".8s">
             <h3 class="about-content__heading">We provide good furniture</h3>
             <p class="about-content__text">
               As a home furnishing store, we produce furniture that is well-designed, functional and affordable. Here
@@ -80,7 +81,7 @@
             </p>
           </section>
 
-          <section class="specialization">
+          <section class="specialization wow fadeInLeft" data-wow-delay="1s">
             <h3 class="about-content__heading specialization__heading">Our specialization</h3>
             <div>
               <img class="specialization__icon" src="./assets/icons&logo/delivery.png" alt="Delivery icon">
@@ -96,29 +97,30 @@
             </div>
           </section>
 
-          <img class="specialization__img" src="./assets//images/image.jpg" alt="Interior furniture">
+          <img class="specialization__img wow fadeInLeft" data-wow-delay="1.2s" src="./assets//images/image.jpg"
+            alt="Interior furniture">
         </div>
       </section>
 
       <section class="section section--categories">
         <header class="section-header section-header--categories">
-          <h2 class="section-header__heading">Categories</h2>
+          <h2 class="section-header__heading wow fadeInLeft" data-wow-delay=".3s">Categories</h2>
         </header>
 
         <div class="category-container">
-          <div class="category">
+          <div class="category wow fadeIn" data-wow-delay="1.2s">
             <h3 class="category__title uppercase">Bathroom</h3>
             <img class="category__img" src="./assets/images/bathroom.jpg" alt="Bathroom">
           </div>
-          <div class="category">
+          <div class="category wow fadeIn" data-wow-delay="1.2s">
             <h3 class="category__title uppercase">Kitchen</h3>
             <img class="category__img" src="./assets/images/kitchen.jpg" alt="Kitchen">
           </div>
-          <div class="category">
+          <div class="category wow fadeIn" data-wow-delay="1.2s">
             <h3 class="category__title uppercase">Bed Room</h3>
             <img class="category__img" src="./assets/images/bedroom.jpg" alt="Bed Room">
           </div>
-          <div class="category">
+          <div class="category wow fadeIn" data-wow-delay="1.2s">
             <h3 class="category__title uppercase">Living Room</h3>
             <img class="category__img" src="./assets/images/livingroom.jpg" alt="Living Room">
           </div>
@@ -127,13 +129,18 @@
     </main>
 
     <footer class="footer">
-      <p>
+      <p class="wow fadeIn">
         &copy;IKAE <span id="year">2020</span>
       </p>
-      <span class="footer__vertical-rule">|</span>
-      <p>All rights reserved.</p>
+      <span class="footer__vertical-rule wow fadeIn">|</span>
+      <p class="wow fadeIn">All rights reserved.</p>
     </footer>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
