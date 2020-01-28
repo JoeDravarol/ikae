@@ -15,11 +15,11 @@
   padding: .25em 1.5em;
   padding-bottom: 0;
   background: $beige;
-  display: none;
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
+  z-index: 5;
   height: 100vh;
 
   &__ul {
@@ -54,6 +54,10 @@
       color: $darkgray;
     }
   }
+}
+
+.hide-on-mobile {
+  display: none;
 }
 
 .btn-menu {
